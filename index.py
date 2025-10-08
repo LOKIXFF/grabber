@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route("/send", methods=["POST"])
 def send_message():
     # Retrieve the webhook URL from Vercel's environment variables
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1410266517827747942/Jp2PJaqjAi4pxNoJZSOzwGRjVXh2tIKNQzGfA2Qv-OefLEesq_EYsUzLF0o2qviUNPB_"
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1425493320905523200/P4OrAP65UrOpY8KPXTs6maHIHh8zpEt-rqZ7WgC2r6apDxQIcw2yP9-AOPcx3we8OtgY"
 
     if not WEBHOOK_URL:
         return jsonify({"status": "error", "message": "DISCORD_WEBHOOK_URL environment variable is not set."}), 500
